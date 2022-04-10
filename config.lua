@@ -17,7 +17,7 @@ Config.LicenseRank = 2
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.Locations = {
     ["duty"] = {
-        [1] = vector3(440.085, -974.924, 30.689),
+        [1] = vector3(442.78, -981.93, 30.69), -- done
         [2] = vector3(-449.811, 6012.909, 31.815),
     },
     ["vehicle"] = {
@@ -104,59 +104,45 @@ Config.SecurityCameras = {
 Config.AuthorizedVehicles = {
 	-- Grade 0
 	[0] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["police"] = "Police Cruiser",
+		["policet"] = "Police Van"
 	},
 	-- Grade 1
 	[1] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["police"] = "Police Cruiser",
+		["police3"] = "Police Buffalo",
+		["policet"] = "Police Van",
+		["sheriff2"] = "Sheriff SUV",
 
 	},
 	-- Grade 2
 	[2] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["police"] = "Police Cruiser",
+		["police2"] = "Police Interceptor",
+		["police3"] = "Police Buffalo",
+		["policet"] = "Police Van",
+		["sheriff"] = "Sheriff Sedan",
+		["sheriff2"] = "Sheriff SUV",
 	},
 	-- Grade 3
 	[3] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["police"] = "Police Cruiser",
+		["police2"] = "Police Interceptor",
+		["police3"] = "Police Buffalo",
+		["police4"] = "Unmarked Cruiser",
+		["policet"] = "Police Van",
+		["sheriff"] = "Sheriff Sedan",
+		["sheriff2"] = "Sheriff SUV",
 	},
 	-- Grade 4
 	[4] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["police"] = "Police Cruiser",
+		["police2"] = "Police Interceptor",
+		["police3"] = "Police Buffalo",
+		["police4"] = "Unmarked Cruiser",
+		["policet"] = "Police Van",
+		["sheriff"] = "Sheriff Sedan",
+		["sheriff2"] = "Sheriff SUV"
 	}
 }
 
