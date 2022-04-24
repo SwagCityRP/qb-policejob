@@ -150,6 +150,7 @@ function TakeOutVehicle(vehicleInfo)
     local coords = Config.Locations["vehicle"][currentGarage]
     if coords then
         QBCore.Functions.SpawnVehicle(vehicleInfo, function(veh)
+            SetVehicleLivery(veh , 0)
             SetCarItemsInfo()
             SetVehicleNumberPlateText(veh, Lang:t('info.police_plate')..tostring(math.random(1000, 9999)))
             SetEntityHeading(veh, coords.w)
@@ -405,7 +406,7 @@ RegisterNetEvent('police:client:EvidenceStashDrawer', function(data)
 
     if not takeLoc then return end
 
-    if #(pos - takeLoc) <= 1.0 then
+    if #(pos - takeLoc) <= 2.0 then
         local drawer = exports['qb-input']:ShowInput({
             header = Lang:t('info.evidence_stash', {value = currentEvidence}),
             submitText = "open",

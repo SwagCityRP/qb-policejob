@@ -477,20 +477,20 @@ RegisterNetEvent('police:server:SendTrackerLocation', function(coords, requestId
     TriggerClientEvent("qb-phone:client:addPoliceAlert", requestId, alertData)
 end)
 
-QBCore.Commands.Add('911p', Lang:t("commands.police_report"), {{name='message', help=Lang:t("commands.message_sent")}}, false, function(source, args)
-	local src = source
-	if args[1] then message = table.concat(args, " ") else message = Lang:t("commands.civilian_call") end
-    local ped = GetPlayerPed(src)
-    local coords = GetEntityCoords(ped)
-    local players = QBCore.Functions.GetQBPlayers()
-    for k,v in pairs(players) do
-        if v.PlayerData.job.name == 'police' and v.PlayerData.job.onduty then
-            local alertData = {title = Lang:t("commands.emergency_call"), coords = {coords.x, coords.y, coords.z}, description = message}
-            TriggerClientEvent("qb-phone:client:addPoliceAlert", v.PlayerData.source, alertData)
-            TriggerClientEvent('police:client:policeAlert', v.PlayerData.source, coords, message)
-        end
-    end
-end)
+-- QBCore.Commands.Add('911p', Lang:t("commands.police_report"), {{name='message', help=Lang:t("commands.message_sent")}}, false, function(source, args)
+-- 	local src = source
+-- 	if args[1] then message = table.concat(args, " ") else message = Lang:t("commands.civilian_call") end
+--     local ped = GetPlayerPed(src)
+--     local coords = GetEntityCoords(ped)
+--     local players = QBCore.Functions.GetQBPlayers()
+--     for k,v in pairs(players) do
+--         if v.PlayerData.job.name == 'police' and v.PlayerData.job.onduty then
+--             local alertData = {title = Lang:t("commands.emergency_call"), coords = {coords.x, coords.y, coords.z}, description = message}
+--             TriggerClientEvent("qb-phone:client:addPoliceAlert", v.PlayerData.source, alertData)
+--             TriggerClientEvent('police:client:policeAlert', v.PlayerData.source, coords, message)
+--         end
+--     end
+-- end)
 
 -- Items
 QBCore.Functions.CreateUseableItem("handcuffs", function(source, item)

@@ -21,7 +21,7 @@ Config.Locations = {
         [2] = vector3(-449.811, 6012.909, 31.815),
     },
     ["vehicle"] = {
-        [1] = vector4(458.87, -992.88, 25.7, 2.98), -- done
+        [1] = vector4(458.87, -992.88, 25.71, 0), -- done
         [2] = vector4(-455.39, 6002.02, 31.34, 87.93),
     },
     ["stash"] = {
@@ -45,9 +45,9 @@ Config.Locations = {
         [1] = vector3(482.86, -988.66, 30.69), -- done
     },
     ["evidence"] = {
-        [1] = vector3(447.13, -997.05, 30.69), -- done
-        [2] = vector3(449.03, -997.63, 30.69), -- done
-        [3] = vector3(452.0, -998.71, 30.69), -- done
+        [1] = vector3(451.82, -999.02, 30.69), -- done
+        [2] = vector3(450.07, -996.88, 30.69), -- done
+        [3] = vector3(447.38, -996.85, 30.69), -- done
     },
     ["stations"] = {
         [1] = {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
@@ -103,45 +103,37 @@ Config.SecurityCameras = {
 Config.AuthorizedVehicles = {
 	-- Grade 0
 	[0] = {
-		["police"] = "Police Cruiser",
+		["valor6bb"] = "2018 Taurus",
 		["policet"] = "Police Van"
 	},
 	-- Grade 1
 	[1] = {
-		["police"] = "Police Cruiser",
-		["police3"] = "Police Buffalo",
-		["policet"] = "Police Van",
-		["sheriff2"] = "Sheriff SUV",
-
+		["valor6bb"] = "2018 Taurus",
+		["valor9bb"] = "2021 Tahoe",
+		["policet"] = "Police Van"
 	},
 	-- Grade 2
 	[2] = {
-		["police"] = "Police Cruiser",
-		["police2"] = "Police Interceptor",
-		["police3"] = "Police Buffalo",
-		["policet"] = "Police Van",
-		["sheriff"] = "Sheriff Sedan",
-		["sheriff2"] = "Sheriff SUV",
+		["valor3bb"] = "2018 Charger",
+		["valor6bb"] = "2018 Taurus",
+		["valor9bb"] = "2021 Tahoe",
+		["policet"] = "Police Van"
 	},
 	-- Grade 3
 	[3] = {
-		["police"] = "Police Cruiser",
-		["police2"] = "Police Interceptor",
-		["police3"] = "Police Buffalo",
-		["police4"] = "Unmarked Cruiser",
-		["policet"] = "Police Van",
-		["sheriff"] = "Sheriff Sedan",
-		["sheriff2"] = "Sheriff SUV",
+		["valor3bb"] = "2018 Charger",
+		["valor6bb"] = "2018 Taurus",
+		["valor9bb"] = "2021 Tahoe",
+		["valor14bb"] = "2018 F-150",
+		["policet"] = "Police Van"
 	},
 	-- Grade 4
 	[4] = {
-		["police"] = "Police Cruiser",
-		["police2"] = "Police Interceptor",
-		["police3"] = "Police Buffalo",
-		["police4"] = "Unmarked Cruiser",
-		["policet"] = "Police Van",
-		["sheriff"] = "Sheriff Sedan",
-		["sheriff2"] = "Sheriff SUV"
+		["valor3bb"] = "2018 Charger",
+		["valor6bb"] = "2018 Taurus",
+		["valor9bb"] = "2021 Tahoe",
+		["valor14bb"] = "2018 F-150",
+		["policet"] = "Police Van"
 	}
 }
 
